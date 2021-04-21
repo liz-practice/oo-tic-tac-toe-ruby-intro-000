@@ -69,4 +69,25 @@ def won?
     end
   end
 end
+
+def full?
+@board.all?{|position| position != " " }
+end
+
+def draw?
+full? && !won?
+end
+
+def over?
+won? || draw?
+end
+
+def winner
+  if win_combo = won?
+    @board[win_combo[0]]
+  end
+end
+
+
+
 end
