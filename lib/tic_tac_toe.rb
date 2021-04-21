@@ -90,6 +90,6 @@ end
 
 def play
   turn until over?
-  puts winner ? "Congrats #{winner}!" : "It's a draw!" 
+  puts winner ? "Congratulations #{winner}!" : "Cats Game!" 
   end 
 end
