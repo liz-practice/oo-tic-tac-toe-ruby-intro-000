@@ -89,6 +89,7 @@ def winner
 end
 
 def play
-
-
+  turn until over?
+  puts winner ? "Congrats #{winner}!": "It's a draw!" 
+  end 
 end
